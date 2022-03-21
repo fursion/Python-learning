@@ -2,14 +2,18 @@ def im():
     print("im test")
 
 
-class C_a:
+class Ca:
     def __init__(self) -> None:
         print("C_a")
 
 
-class C_b(C_a):
+class Cb(Ca):
     def __init__(self) -> None:
         print("C_b")
-    def fun01():
+
+    @staticmethod
+    def fun01(self):
         print("C_b_fun01")
-c=C_b()
+
+
+c = Cb()
